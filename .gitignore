@@ -1,0 +1,14 @@
+#java files
+*.class
+*.jar
+*.war
+*.ear
+*.eclipse
+*.settings
+*.project
+*.classpath
+
+aws-ops/.idea/*
+aws-ops/aws-ops.iml
+aws-ops/target/*
+
