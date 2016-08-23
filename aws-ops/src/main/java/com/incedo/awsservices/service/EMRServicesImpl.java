@@ -2,6 +2,8 @@ package com.incedo.awsservices.service;
 
 import com.amazonaws.services.elasticmapreduce.model.RunJobFlowRequest;
 import com.incedo.awsservices.adapter.EMRAdapter;
+import com.incedo.awsservices.coremodel.EMRClusterModel;
+import com.incedo.awsservices.coremodel.EMRCreateClusterModel;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -17,7 +19,7 @@ public class EMRServicesImpl implements EMRServices {
     }
 
     @Override
-    public void createCluster() {
-
+    public EMRClusterModel createCluster(EMRCreateClusterModel model) {
+        return emrAdapter.createCluster(model);
     }
 }

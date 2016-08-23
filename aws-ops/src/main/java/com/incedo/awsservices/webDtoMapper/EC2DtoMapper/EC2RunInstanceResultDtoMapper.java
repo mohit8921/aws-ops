@@ -1,4 +1,4 @@
-package com.incedo.awsservices.webDtoMapper;
+package com.incedo.awsservices.webDtoMapper.EC2DtoMapper;
 
 import com.incedo.awsservices.coremodel.EC2InstanceModel;
 import com.incedo.awsservices.coremodel.EC2RunInstanceResultModel;

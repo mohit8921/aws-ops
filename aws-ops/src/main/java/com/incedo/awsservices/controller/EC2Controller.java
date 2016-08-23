@@ -4,7 +4,7 @@ import com.incedo.awsservices.coremodel.EC2RunInstanceResultModel;
 import com.incedo.awsservices.service.EC2Services;
 import com.incedo.awsservices.webDtoMapper.EC2DtoMapper.EC2CreateInstanceDtoMapper;
 import com.incedo.awsservices.webDtoMapper.EC2DtoMapper.EC2SecurityGroupDtoMapper;
-import com.incedo.awsservices.webDtoMapper.EC2RunInstanceResultDtoMapper;
+import com.incedo.awsservices.webDtoMapper.EC2DtoMapper.EC2RunInstanceResultDtoMapper;
 import com.incedo.awsservices.webDtoMapper.KeyPairDtoMapper;
 import com.incedo.awsservices.webdto.EC2CreateInstanceDto;
 import com.incedo.awsservices.webdto.EC2RunInstanceResultDto;
@@ -44,5 +44,7 @@ public class EC2Controller {
         EC2RunInstanceResultModel model = ec2Services.createEC2Instance(EC2CreateInstanceDtoMapper.map(ec2CreateInstanceDto));
         return EC2RunInstanceResultDtoMapper.map(model);
     }
+
+
 
 }
